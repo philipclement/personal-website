@@ -294,6 +294,78 @@ h1 {
   color: var(--muted);
 }
 
+.skills-stack {
+  display: grid;
+  gap: 36px;
+}
+
+.skill-section {
+  display: grid;
+  gap: 18px;
+}
+
+.skill-section-header h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.skill-section-header p {
+  color: var(--muted);
+}
+
+.skill-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 6px 2px 12px;
+  scroll-snap-type: x mandatory;
+}
+
+.skill-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.skill-row::-webkit-scrollbar-thumb {
+  background: rgba(16, 20, 24, 0.2);
+  border-radius: 999px;
+}
+
+.skill-item {
+  min-width: 140px;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 18px 16px;
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(16, 20, 24, 0.08);
+  scroll-snap-align: start;
+}
+
+.skill-item span:last-child {
+  font-weight: 600;
+}
+
+.skill-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: var(--icon-color, var(--accent));
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  box-shadow: 0 10px 20px rgba(16, 20, 24, 0.12);
+}
+
+.skill-icon::before {
+  content: attr(data-letter);
+}
+
 .timeline {
   display: grid;
   gap: 28px;
