@@ -183,8 +183,8 @@ h1 {
 }
 
 .hero-headshot {
-  width: 140px;
-  height: 140px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background: conic-gradient(from 120deg, var(--accent), var(--sky), var(--peach));
   padding: 6px;
@@ -386,6 +386,23 @@ h1 {
   border-left: 4px solid var(--accent);
   background: rgba(106, 92, 255, 0.08);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.experience-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.experience-logo {
+  width: 68px;
+  height: 68px;
+  border-radius: 14px;
+  object-fit: contain;
+  background: var(--white);
+  padding: 8px;
+  box-shadow: 0 8px 18px rgba(16, 20, 24, 0.1);
 }
 
 .timeline h3 {
