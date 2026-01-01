@@ -176,6 +176,30 @@ h1 {
   border: 1px solid rgba(16, 20, 24, 0.08);
 }
 
+.hero-profile {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+}
+
+.hero-headshot {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: conic-gradient(from 120deg, var(--accent), var(--sky), var(--peach));
+  padding: 6px;
+  box-shadow: 0 16px 30px rgba(16, 20, 24, 0.2);
+}
+
+.hero-headshot img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--white);
+  background: var(--white);
+}
+
 .hero-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -188,13 +212,6 @@ h1 {
   gap: 16px;
   align-items: center;
   margin-bottom: 20px;
-}
-
-.avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: conic-gradient(from 120deg, var(--accent), var(--sky), var(--peach));
 }
 
 .card-title {
@@ -352,18 +369,11 @@ h1 {
   width: 52px;
   height: 52px;
   border-radius: 16px;
-  background: var(--icon-color, var(--accent));
-  color: var(--white);
-  display: grid;
-  place-items: center;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  box-shadow: 0 10px 20px rgba(16, 20, 24, 0.12);
-}
-
-.skill-icon::before {
-  content: attr(data-letter);
+  background: var(--white);
+  border: 1px solid rgba(16, 20, 24, 0.08);
+  padding: 8px;
+  object-fit: contain;
+  box-shadow: 0 10px 20px rgba(16, 20, 24, 0.08);
 }
 
 .timeline {
